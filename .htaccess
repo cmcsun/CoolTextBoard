@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+
+<FilesMatch "\.(txt|pm)$">
+Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^read.cgi/([a-z]+)/([0-9]+)/?$ $1/res/$2.html
+RewriteRule ^read.cgi/([a-z]+)/([0-9]+)/([0-9l\-\,]+)$ read.cgi?board=$1&thread=$2&read=$3
+RewriteRule ^([a-z]+)/all$ $1/subback.html
+</IfModule>

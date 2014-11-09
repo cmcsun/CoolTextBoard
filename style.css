@@ -1,0 +1,169 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+body#frontpage {
+    background: #C5AD99;
+    background-image: url(data:image/gif;base64,R0lGODdhPAA8AJkAANCznMWtmbOektzApiwAAAAAPAA8AAAC/5SPqcvtCJ6c1IUAsgZ48wuG4qV1njYMZxmkbjYGQpipJeDmuo7zdYoTRSwiRGuFg3lio4HpswF9SJzhobpMSXsZAVQoS6KcpoH3MsPIZsAtVWAbDoVYziuZ3nhhnavWVASVFkYVNdbixKbH0mXQQ8I0FdERVnOi4tXWcqFVZXKAqAbJNEoTdUT28vSlZvUoFRmpxIdh87LXw1Z4cAc5wzFIulIbt+FS6MELVBJsMPK7utqTAmfrbAPoqAlCVknaOkWsclej7VzlRyYJAhc+slTllDNFbZBIq+10I3WGJks77cc4bCSgAcsUp1SESd9+hRv4Q9wiT/aWwWIHMEQaXP/GyNn52EEfjIrYoGGkpVHaGEuF2kTZiFASvm8qp+2YR4xlophqHEKpcwlFOWjO0IB6cGRQMBlMm86oAFXBnzVRHcwbs2xFDkQ8lt28aSzMPHWFCHHNKkaDo44etk5LM7DerFJ/6hSTM6xSWrUkgGDieOIIl46IgNJxl7JwrnY34tzViuQiw2c1+k662wmoVhqC3yD29YOPLnhIbqBE9hOl0tBmLht6VDqy5NPPOKmQYabFRko+I7OAtEQYoTZeTAaLPQslI3d8RHPWzXiQpc3DlnsD468Wy+g1p58S9WTL7yItG5E5DgPtxOa/v7u5sgSOP62ARWr+GFimUcEsurX/wraQcslVFxgVIdhSgg243GZfW7EBAo+BCwqFW3L+hSYGf0pYhAsT9ghESFo7CHRXNIq5ch86cCxw0FI0ZXdOEQlQtQCNMjqjwIvi6YgaSV/9qENIQA75VXCzxdBIgJ005NBF2rBz23MxKKVMN/14otYezXyYR4bAuccOfFFK80lZfWDAESAGAhQOAlvpFU1yKUmnJikuUjXNc5J0GSZT0iUE3gf9+IejRwO+duYay+3DzkWBIPSYkZHYc1h7NLGB0IEjPahHP0Zl9A4TrW2TJVmBYNTneJfSkGmKoi1ayjmqIjlZcaGwFxxtbjB1ymd2ihVprgaWEqqHUzZajSYFKYq3J7FgZneqn1zAgtxIomQEqilTFjcYcibimlodUjrKrXqyOWqZFAUAADs=);
+}
+body#threadpage {
+    background: #EFEFEF;
+}
+.form .hide {
+    display: none;
+}
+textarea {
+    margin-top: 4px;
+}
+a {
+    color: #00C;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover {
+    color: #F00;
+}
+/*frontpage*/
+div.shell {
+    border: 1px outset #000;
+    padding: 0 7px 7px 7px;
+    margin: 0 2.5% 1em 2.5%;
+    background: #CCFFCC;
+}
+div.shell-thread {
+    border: 1px outset #000;
+    padding: 0 7px 7px 7px;
+    margin: 0 2.5% 1em 2.5%;
+    background: #EFEFEF;
+}
+div.shell > div,
+div.shell-thread > div {
+    border: 1px inset #000;
+    padding: 5px;
+    margin-top: 7px;
+    display: block;
+}
+#threadlist .links {
+    text-align: right;
+    font-weight: bold;
+}
+.links a,
+#threadlist .thread,
+#subback .thread {
+    margin-right: 6px;
+}
+.subject h2 {
+    display: inline-block;
+    margin: 0;
+	  line-height: 120%;
+    font-size: 1.5em;
+}
+.subject a {
+    color: #F00;
+    text-decoration: none;
+}
+.subject a:hover {
+    text-decoration: underline;
+}
+.subject .threadpost {
+    font-weight: bold;
+}
+.recent {
+    margin: 0.5em 0 0.5em 0;
+}
+.form {
+    margin-top: 1em;
+}
+.form h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+/*threadpage*/
+#threadpage h2 {
+    margin: 8px 0;
+    color: #F00;
+	  line-height: 120%;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+.post .num {
+    font-weight: bold;
+    cursor: pointer;
+}
+.post .name {
+    font-weight: bold;
+    color: green;
+}
+.post .sage {color:#00C!important;text-decoration:underline;}
+.post .sage:hover{color:#F00!important;cursor:pointer;}
+.post .trip {
+    color: green;
+}
+.backlinks {
+    margin: 0px 0px 0px 32px;
+    font-size: small;
+    opacity: 0.8;
+}
+.backlinks a {
+    text-decoration: none;
+}
+.backlinks a:hover {
+    text-decoration: underline;
+}
+.comment, .preview {
+    margin: 4px 0px 4px 16px;
+    padding: 4px 0px 4px 16px;
+    overflow: auto;
+}
+.preview {
+    border-left: solid 2px #666;
+    background: #EFEFEF;
+}
+/* Subback */
+#subback .links {
+    float: right;
+    margin-left: 1em;
+    font-weight: bold;
+}
+#subback div.float {
+    border: 1px outset honeydew;
+    float: left;
+    min-height: 20em;
+    line-height: 1em;
+    background: #F0FFF0;
+}
+#subback div.float a {
+    display: block;
+    padding: 0px 4px;
+    margin:0px;
+    text-decoration: none;
+    white-space: nowrap;
+    background: inherit;
+}
+#subback div.float a:visited {
+    background: #E0EEE0;
+}
+#subback div.float a:hover {
+    color: #0000CC;
+    background: #00FFFF;
+}
+/* Markup style */
+:lang(ja) {
+	  font-family: Mona, 'MS PGothic';
+	  font-size: 12pt;
+	  white-space: pre;
+}
+code {
+	  display: inline-block;
+	  white-space: pre;
+    overflow: auto;
+    width: 100%;
+}
+blockquote {
+    border-left: solid 2px #666;
+    padding: 0px 0px 0px 10px;
+    margin-left: 0px;
+    display: block;
+}
+blockquote:hover {
+    background: #f0f0e0;
+}
